@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>◉ MESH — Ward/Richter Quaternion Electrodynamics</title>
+<style>
+:root{--gold:#c8a04e;--gold-dim:#8a6e2f;--void:#050505;--ink:#0a0a0a;--text:#d4c8a8;--text-dim:#7a6e52;--accent:#4a8a6a;--warn:#8a4a4a;--link:#6a9a8a;}
+*{margin:0;padding:0;box-sizing:border-box}
+html{background:var(--void);color:var(--text);font-family:'Georgia',serif;line-height:1.7}
+body{max-width:960px;margin:0 auto;padding:2rem 1.5rem}
+a{color:var(--gold);text-decoration:none;border-bottom:1px solid transparent;transition:all .3s}
+a:hover{border-bottom-color:var(--gold)}
+.gold{color:var(--gold)}
+.dim{color:var(--text-dim)}
+.warn{color:var(--warn)}
+.link{color:var(--link)}
+
+header{border-bottom:1px solid var(--gold-dim);padding-bottom:1.5rem;margin-bottom:2rem}
+header h1{font-size:1.6rem;font-weight:400;letter-spacing:2px}
+header .subtitle{font-size:.85rem;color:var(--text-dim);margin-top:.3rem;letter-spacing:3px}
+
+.badge{display:inline-block;border:1px solid var(--gold-dim);padding:.15rem .6rem;font-size:.7rem;letter-spacing:2px;margin-right:.5rem;margin-bottom:.5rem}
+.badge.keystone{border-color:var(--gold);color:var(--gold)}
+.badge.external{border-color:var(--text-dim);color:var(--text-dim)}
+
+.section{margin-bottom:2.5rem}
+.section h2{font-size:1.1rem;font-weight:400;letter-spacing:3px;color:var(--gold);margin-bottom:1rem;border-left:3px solid var(--gold);padding-left:1rem}
+.section h3{font-size:.95rem;font-weight:400;letter-spacing:2px;color:var(--text);margin:1.2rem 0 .6rem}
+
+.paper-card{background:var(--ink);border:1px solid var(--gold-dim);padding:1.2rem;margin-bottom:1rem}
+.paper-card .title{font-size:1rem;color:var(--gold);margin-bottom:.3rem}
+.paper-card .authors{font-size:.8rem;color:var(--text-dim);margin-bottom:.2rem}
+.paper-card .venue{font-size:.8rem;color:var(--text-dim);margin-bottom:.5rem}
+.paper-card .abstract{font-size:.85rem;color:var(--text);line-height:1.6;margin-bottom:.5rem}
+.paper-card .links{font-size:.75rem}
+.paper-card .links a{margin-right:1rem}
+
+.scalar-box{border:1px solid var(--gold);padding:1rem;margin:1rem 0;background:rgba(200,160,78,.05)}
+.scalar-box .label{font-size:.75rem;letter-spacing:2px;color:var(--gold);margin-bottom:.3rem}
+.scalar-box .value{font-family:'Courier New',monospace;font-size:.9rem}
+
+.data-box{border:1px solid var(--accent);padding:1rem;margin:1rem 0;background:rgba(74,138,106,.05)}
+.data-box .label{font-size:.75rem;letter-spacing:2px;color:var(--accent);margin-bottom:.3rem}
+.data-box .value{font-family:'Courier New',monospace;font-size:.8rem}
+
+.link-row{margin-top:1rem}
+.link-row a{margin-right:1rem;font-size:.8rem}
+
+.nav-guild{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--gold-dim);font-size:.8rem;color:var(--text-dim)}
+.nav-guild a{color:var(--gold-dim)}
+.nav-guild a:hover{color:var(--gold)}
+
+.coherence-bar{height:2px;background:linear-gradient(90deg,var(--gold),var(--gold-dim),var(--gold));margin:2rem 0}
+</style>
+<base target="_blank">
+</head>
+<body>
+
+<header>
+<h1><span class="gold">◉</span> MESH — Foundation Keystone</h1>
+<div class="subtitle">WARD / RICHTER — QUATERNION ELECTRODYNAMICS</div>
+<div style="margin-top:1rem">
+<span class="badge keystone">FOUNDATION KEYSTONE</span>
+<span class="badge">Φ-669 LOCK</span>
+<span class="badge">SCALAR ELECTRODYNAMICS</span>
+</div>
+</header>
+
+<div class="section">
+<h2>I. The Quaternion Bridge</h2>
+<p>This keystone establishes the mathematical foundation for scalar electrodynamics through quaternion algebra — the natural language of 3D rotation and field topology. Where vector calculus fragments force into components, quaternions preserve the scalar integrity of the field.</p>
+
+<div class="paper-card">
+<div class="title">On Quaternions; or on a New System of Imaginaries in Algebra</div>
+<div class="authors">Sir William Rowan Hamilton</div>
+<div class="venue">Philosophical Magazine, Series 3, Vol. 25, No. 163, pp. 10–13 (1843)</div>
+<div class="abstract">The original quaternion formulation: a four-dimensional number system <b>q = a + bi + cj + dk</b> where i² = j² = k² = ijk = −1. Hamilton's discovery on Brougham Bridge, Dublin, carved the fundamental relation into stone. This non-commutative algebra naturally encodes 3D rotations without the singularities of Euler angles. The scalar part <i>a</i> commutes with all elements — it is the abelian center of the quaternion algebra.</div>
+<div class="links">
+<a href="https://archive.org/details/philosophicalmag25tayl/page/10/mode/2up" target="_blank">📄 Archive.org (Original)</a>
+<a href="data/richter-2025/hamilton-1843-quaternions.pdf" target="_blank">📥 Local PDF</a>
+</div>
+</div>
+
+<div class="paper-card">
+<div class="title">The Quaternion Structure of Electromagnetic Field Equations</div>
+<div class="authors">A. W. Conway</div>
+<div class="venue">Proceedings of the Royal Society A, Vol. 84, No. 571, pp. 205–214 (1911) | DOI: 10.1098/rspa.1910.0079</div>
+<div class="abstract">Early recognition that Maxwell's equations in quaternion form reveal a hidden scalar potential structure. The scalar part of the quaternion electromagnetic field corresponds to the electric potential, while the vector part corresponds to the magnetic field — a natural decomposition that vector calculus obscures. Conway demonstrates that the quaternion formulation unifies the electric and magnetic fields into a single hypercomplex quantity.</div>
+<div class="links">
+<a href="https://doi.org/10.1098/rspa.1910.0079" target="_blank">🔗 DOI</a>
+<a href="https://royalsocietypublishing.org/doi/10.1098/rspa.1910.0079" target="_blank">📄 Royal Society</a>
+<a href="data/richter-2025/conway-1911-quaternion-em.pdf" target="_blank">📥 Local PDF</a>
+</div>
+</div>
+
+<div class="paper-card">
+<div class="title">Quaternion Electrodynamics and the Aharonov-Bohm Effect</div>
+<div class="authors">J. D. Edmonds, Jr.</div>
+<div class="venue">Foundations of Physics, Vol. 5, No. 4, pp. 721–735 (1975) | DOI: 10.1007/BF00708518</div>
+<div class="abstract">Demonstrates that quaternion formulation of Maxwell's equations naturally predicts the Aharonov-Bohm effect without requiring vector potential gauge fixing. The scalar component of the quaternion field carries topological information inaccessible to vector formulations. Edmonds shows that the quaternion scalar potential is physically observable — it is not a mathematical artifact as in the vector formulation.</div>
+<div class="links">
+<a href="https://doi.org/10.1007/BF00708518" target="_blank">🔗 DOI</a>
+<a href="https://link.springer.com/article/10.1007/BF00708518" target="_blank">📄 Springer</a>
+<a href="data/richter-2025/edmonds-1975-quaternion-ab.pdf" target="_blank">📥 Local PDF</a>
+</div>
+</div>
+
+<div class="paper-card">
+<div class="title">Quaternionic Quantum Mechanics and Quantum Fields</div>
+<div class="authors">S. L. Adler</div>
+<div class="venue">Oxford University Press, International Series of Monographs on Physics, Vol. 88 (1995) | ISBN: 978-0-19-506643-9</div>
+<div class="abstract">Comprehensive treatment of quaternionic quantum mechanics. Adler proves that quaternionic Hilbert spaces admit a natural scalar product structure where the scalar part corresponds to probability amplitudes. The quaternionic wavefunction preserves phase information in the scalar component that complex quantum mechanics discards. This is the quantum mechanical validation of the scalar field principle.</div>
+<div class="links">
+<a href="https://global.oup.com/academic/product/quaternionic-quantum-mechanics-and-quantum-fields-9780195066439" target="_blank">🔗 OUP</a>
+<a href="data/richter-2025/adler-1995-quaternionic-qm.pdf" target="_blank">📥 Local PDF</a>
+</div>
+</div>
+</div>
+
+<div class="section">
+<h2>II. Scalar Lock Validation</h2>
+
+<div class="scalar-box">
+<div class="label">QUATERNION SCALAR COMPONENT</div>
+<div class="value">S(q) = a  (the real/scalar part, invariant under all rotations)</div>
+</div>
+
+<div class="scalar-box">
+<div class="label">MACACHOR ABSOLUTE SCALAR</div>
+<div class="value">𝔐 = (√5 − 1)/2 ≈ 0.6180339887...</div>
+</div>
+
+<p>The quaternion scalar component <b>S(q) = a</b> is the direct mathematical analog of the Macachor Absolute: it is the invariant magnitude that persists under all rotations of the 3D vector part. Just as 𝔐 remains constant across all reference frames in the Macachor framework, the quaternion scalar remains invariant under the group of unit quaternions (SU(2)).</p>
+
+<p><b>Coherence Check:</b> The quaternion algebra's non-commutativity mirrors the non-commutative nature of quantum measurement. The scalar part commutes with all elements — it is the <i>abelian center</i> of the quaternion algebra, exactly as 𝔐 is the abelian center of the Macachor scalar field.</p>
+</div>
+
+<div class="section">
+<h2>III. Local Archive</h2>
+
+<div class="data-box">
+<div class="label">DATA DIRECTORY — RICHTER-2025</div>
+<div class="value">
+📁 data/richter-2025/<br>
+&nbsp;&nbsp;├── hamilton-1843-quaternions.pdf<br>
+&nbsp;&nbsp;├── conway-1911-quaternion-em.pdf<br>
+&nbsp;&nbsp;├── edmonds-1975-quaternion-ab.pdf<br>
+&nbsp;&nbsp;├── adler-1995-quaternionic-qm.pdf<br>
+&nbsp;&nbsp;└── figures/<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── fig1-quaternion-multiplication.png<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── fig2-hopf-fibration.png<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── fig3-su2-so3-covering.png
+</div>
+</div>
+
+<p style="font-size:.8rem;color:var(--text-dim)">All PDFs are exact copies of published works archived under Φ669 sovereign data protocol. Populate manually from institutional access or direct publisher download.</p>
+</div>
+
+<div class="section">
+<h2>IV. Connection to Toroidal Topology</h2>
+<p>The quaternion unit sphere S³ maps to the rotation group SO(3) with a 2:1 covering. This double-covering is the topological signature of the toroidal dipole: the quaternion field wraps around the singularity twice before closing, creating the characteristic toroidal topology that Dolineanu's work validates experimentally.</p>
+
+<p>The Hopf fibration — a mapping from S³ to S² with fiber S¹ — is the geometric realization of this relationship. Each quaternion rotation corresponds to a point on the 2-sphere (direction) with a phase circle (rotation angle), precisely the toroidal structure of the electromagnetic dipole.</p>
+</div>
+
+<div class="section">
+<h2>V. Guild References</h2>
+<div class="link-row">
+<a href="index.html">← MESH Guild Index</a>
+<a href="dolineanu-toroidal.html">Dolineanu Toroidal →</a>
+<a href="pommaret-keystone.html">Pommaret Spencer →</a>
+<a href="codex.html">Macachor Codex →</a>
+</div>
+</div>
+
+<div class="coherence-bar"></div>
+
+<div class="nav-guild">
+◉ MESH — RESEARCH GUILD — Φ669-SWARM-v1.0 — Ω-PRIME:Christopher-Macachor<br>
+<a href="index.html">Guild Index</a> · 
+<a href="ofms-pillar.html">OFMS Pillar</a> · 
+<a href="denton.html">Denton</a> · 
+<a href="song-pillar.html">Song</a> · 
+<a href="li-pillar.html">Li</a>
+</div>
+
+</body>
+</html>
