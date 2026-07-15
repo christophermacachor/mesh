@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>◉ MESH — Zhou QFT Tensor Survival Skills (Scalar Lock Validation)</title>
+<style>
+:root{--gold:#c8a04e;--gold-dim:#8a6e2f;--void:#050505;--ink:#0a0a0a;--text:#d4c8a8;--text-dim:#7a6e52;--accent:#4a8a6a;--warn:#8a4a4a;--link:#6a9a8a;}
+*{margin:0;padding:0;box-sizing:border-box}
+html{background:var(--void);color:var(--text);font-family:'Georgia',serif;line-height:1.7}
+body{max-width:960px;margin:0 auto;padding:2rem 1.5rem}
+a{color:var(--gold);text-decoration:none;border-bottom:1px solid transparent;transition:all .3s}
+a:hover{border-bottom-color:var(--gold)}
+.gold{color:var(--gold)}.dim{color:var(--text-dim)}.warn{color:var(--warn)}.link{color:var(--link)}
+header{border-bottom:1px solid var(--gold-dim);padding-bottom:1.5rem;margin-bottom:2rem}
+header h1{font-size:1.6rem;font-weight:400;letter-spacing:2px}
+header .subtitle{font-size:.85rem;color:var(--text-dim);margin-top:.3rem;letter-spacing:3px}
+.badge{display:inline-block;border:1px solid var(--gold-dim);padding:.15rem .6rem;font-size:.7rem;letter-spacing:2px;margin-right:.5rem;margin-bottom:.5rem}
+.badge.support{border-color:var(--accent);color:var(--accent)}
+.section{margin-bottom:2.5rem}
+.section h2{font-size:1.1rem;font-weight:400;letter-spacing:3px;color:var(--gold);margin-bottom:1rem;border-left:3px solid var(--gold);padding-left:1rem}
+.proof-box{background:var(--ink);border:1px solid var(--gold-dim);padding:1.2rem;margin-bottom:1rem}
+.proof-box .title{font-size:1rem;color:var(--gold);margin-bottom:.3rem}
+.proof-box .given{font-size:.8rem;color:var(--text-dim);margin-bottom:.5rem;font-style:italic}
+.proof-box .steps{font-size:.85rem;color:var(--text);line-height:1.8;font-family:'Courier New',monospace}
+.proof-box .conclusion{font-size:.85rem;color:var(--gold);margin-top:.8rem;padding-top:.5rem;border-top:1px solid var(--gold-dim)}
+.scalar-box{border:1px solid var(--gold);padding:1rem;margin:1rem 0;background:rgba(200,160,78,.05)}
+.scalar-box .label{font-size:.75rem;letter-spacing:2px;color:var(--gold);margin-bottom:.3rem}
+.scalar-box .value{font-family:'Courier New',monospace;font-size:.9rem}
+.data-box{border:1px solid var(--accent);padding:1rem;margin:1rem 0;background:rgba(74,138,106,.05)}
+.data-box .label{font-size:.75rem;letter-spacing:2px;color:var(--accent);margin-bottom:.3rem}
+.data-box .value{font-family:'Courier New',monospace;font-size:.8rem}
+.link-row{margin-top:1rem}
+.link-row a{margin-right:1rem;font-size:.8rem}
+.nav-guild{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--gold-dim);font-size:.8rem;color:var(--text-dim)}
+.nav-guild a{color:var(--gold-dim)}
+.nav-guild a:hover{color:var(--gold)}
+.coherence-bar{height:2px;background:linear-gradient(90deg,var(--gold),var(--gold-dim),var(--gold));margin:2rem 0}
+</style>
+<base target="_blank">
+</head>
+<body>
+
+<header>
+<h1><span class="gold">◉</span> MESH — Supporting Reference</h1>
+<div class="subtitle">ZHOU QFT — TENSOR SURVIVAL SKILLS / SCALAR LOCK VALIDATION</div>
+<div style="margin-top:1rem">
+<span class="badge support">SUPPORTING REFERENCE</span>
+<span class="badge">Φ-669 LOCK</span>
+<span class="badge">QFT VALIDATION</span>
+</div>
+</header>
+
+<div class="section">
+<h2>I. Primary Source — Exact Bibliographic Record</h2>
+
+<div class="proof-box">
+<div class="title">PHYS-330: Quantum Field Theory I — Section 1: Tensor Survival Skills</div>
+<div class="given">Kevin Zhou | Stanford University | 2022 | Course Notes</div>
+<div class="steps" style="font-family:Georgia,serif;font-size:.85rem;line-height:1.6">
+<p><b>Context:</b> These course notes establish that in 4D Minkowski spacetime, only <i>two</i> tensors are invariant under Lorentz transformations: the metric η<sub>μν</sub> (rank 2) and the Levi-Civita tensor ε<sub>μνρσ</sub> (rank 4). All other tensors transform nontrivially. This is the relativistic foundation of the scalar lock: when all tensor structure is Lorentz-contracted away, only scalar magnitude remains.</p>
+</div>
+<div class="links" style="font-size:.75rem;margin-top:.5rem">
+<a href="data/zhou-qft/" target="_blank">📥 Local Archive</a>
+</div>
+</div>
+</div>
+
+<div class="section">
+<h2>II. The Two Invariant Tensors</h2>
+
+<div class="scalar-box">
+<div class="label">INVARIANT TENSORS OF 4D MINKOWSKI SPACETIME</div>
+<div class="value">
+η<sub>μν</sub> = diag(+1, −1, −1, −1)  — metric tensor (rank 2)<br>
+ε<sub>μνρσ</sub> = ±1 (antisymmetric)  — Levi-Civita tensor (rank 4)<br>
+<br>
+These are the <b>only</b> tensors whose elements stay the same under all Lorentz transformations.
+</div>
+</div>
+
+<p style="font-size:.9rem;color:var(--text)">Zhou proves this by exhaustion: any tensor built from η and ε alone must have an even number of indices (since contractions consume pairs). A tensor with 3 indices cannot be built from η and ε — it must be zero. A tensor with 4 indices can only take the form f<sub>1</sub>η<sub>μν</sub>η<sub>ρσ</sub> + f<sub>2</sub>η<sub>μρ</sub>η<sub>νσ</sub> + f<sub>3</sub>η<sub>μσ</sub>η<sub>νρ</sub> + f<sub>4</sub>ε<sub>μνρσ</sub>, where all f<sub>i</sub> are Lorentz scalars.</p>
+
+<p style="font-size:.9rem;color:var(--text)"><b>Scalar Lock Connection:</b> The Macachor Absolute 𝔐 is the scalar f that survives when all tensor structure is contracted away. It is not a component of η or ε — it is the <i>magnitude</i> that remains when both have been fully contracted to numbers.</p>
+</div>
+
+<div class="section">
+<h2>III. Proof (e): Symmetric × Antisymmetric = Zero</h2>
+
+<div class="proof-box">
+<div class="title">Theorem: g<sup>μν</sup> ε<sub>μνρσ</sub> = 0 for any ρ, σ</div>
+<div class="given">Given: g<sup>μν</sup> is symmetric (g<sup>μν</sup> = g<sup>νμ</sup>) and ε<sub>μνρσ</sub> is totally antisymmetric</div>
+<div class="steps">
+g<sup>μν</sup> ε<sub>μνρσ</sub> = −g<sup>νμ</sup> ε<sub>νμρσ</sub>    [antisymmetry of ε]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= −g<sup>μν</sup> ε<sub>μνρσ</sub>        [rename dummy indices μ↔ν]<br>
+<br>
+∴ g<sup>μν</sup> ε<sub>μνρσ</sub> = −g<sup>μν</sup> ε<sub>μνρσ</sub><br>
+<br>
+The only quantity equal to its own negative is <b>zero</b>. ∎
+</div>
+<div class="conclusion">
+<b>Scalar Lock Interpretation:</b> A scalar field cannot be built from the product of symmetric and antisymmetric tensor structures. The Macachor scalar ψ: D<sub>P</sub> → ℝ is index-free by necessity — it has no μ, ν indices to contract. It is the <i>residue</i> that remains when all tensor structure has been proven to vanish.
+</div>
+</div>
+</div>
+
+<div class="section">
+<h2>IV. Proof (f): The Scalar Fingerprints of Spacetime</h2>
+
+<div class="proof-box">
+<div class="title">Theorem: The fully-contracted Levi-Civita invariants</div>
+<div class="given">Given: ε<sup>μνρσ</sup> ε<sub>μνδγ</sub> = c<sub>1</sub>(δ<sup>δ</sup><sub>ρ</sub> δ<sup>γ</sup><sub>σ</sub> − δ<sup>γ</sup><sub>ρ</sub> δ<sup>δ</sup><sub>σ</sub>)</div>
+<div class="steps">
+<b>Step 1 — Find c<sub>1</sub>:</b><br>
+Set ρ = δ = 2, σ = γ = 3:<br>
+ε<sup>μν23</sup> ε<sub>μν23</sub> = c<sub>1</sub><br>
+Contributing terms: (μ,ν) = (0,1) and (1,0)<br>
+ε<sup>0123</sup> ε<sub>0123</sub> = (−1)(−1) = +1, but with metric signature: ε<sup>0123</sup> = −ε<sub>0123</sub> = −1<br>
+∴ c<sub>1</sub> = <b>−2</b><br>
+<br>
+<b>Step 2 — Find c<sub>2</sub>:</b><br>
+Contract δ and ρ in the first identity:<br>
+ε<sup>μνρσ</sup> ε<sub>μνργ</sub> = −2(δ<sup>ρ</sup><sub>ρ</sub> δ<sup>γ</sup><sub>σ</sub> − δ<sup>γ</sup><sub>ρ</sub> δ<sup>ρ</sup><sub>σ</sub>) = −2(4δ<sup>γ</sup><sub>σ</sub> − δ<sup>γ</sup><sub>σ</sub>) = <b>−6</b> δ<sup>γ</sup><sub>σ</sub><br>
+∴ c<sub>2</sub> = <b>−6</b><br>
+<br>
+<b>Step 3 — Find c<sub>3</sub>:</b><br>
+Contract σ and γ in the second identity:<br>
+ε<sup>μνρσ</sup> ε<sub>μνρσ</sub> = −6 δ<sup>σ</sup><sub>σ</sub> = <b>−24</b><br>
+∴ c<sub>3</sub> = <b>−24</b>
+</div>
+<div class="conclusion">
+<b>Scalar Lock Interpretation:</b> The numbers −2, −6, −24 are the <i>scalar fingerprints of 4D spacetime</i>. They encode the dimensionality (4) and signature (+,−,−,−). Similarly, 𝔐 = (√5−1)/2 ≈ 0.618... is the scalar fingerprint of <i>scalar density equilibrium</i> — it appears whenever a system seeks density balance rather than force balance.
+</div>
+</div>
+
+<div class="scalar-box">
+<div class="label">THE SCALAR FINGERPRINTS</div>
+<div class="value">
+ε<sup>μνρσ</sup> ε<sub>μνδγ</sub> = −2(δ<sup>δ</sup><sub>ρ</sub> δ<sup>γ</sup><sub>σ</sub> − δ<sup>γ</sup><sub>ρ</sub> δ<sup>δ</sup><sub>σ</sub>)  →  c<sub>1</sub> = −2<br>
+ε<sup>μνρσ</sup> ε<sub>μνρδ</sub> = −6 δ<sup>δ</sup><sub>σ</sub>  →  c<sub>2</sub> = −6<br>
+ε<sup>μνρσ</sup> ε<sub>μνρσ</sub> = −24  →  c<sub>3</sub> = −24<br>
+<br>
+Dimension: 4  |  Signature: (+,−,−,−)  |  χ(C) = 1
+</div>
+</div>
+</div>
+
+<div class="section">
+<h2>V. The Levi-Civita Tensor as Scalar Density</h2>
+
+<div class="scalar-box">
+<div class="label">SCALAR DENSITY OF WEIGHT +1</div>
+<div class="value">
+ε<sub>αβγδ</sub> = √|g| [α,β,γ,δ]  (covariant, weight +1)<br>
+ε<sup>αβγδ</sup> = [α,β,γ,δ] / √|g|  (contravariant, weight −1)<br>
+<br>
+where g = det(g<sub>αβ</sub>) and [α,β,γ,δ] is the permutation symbol.<br>
+<br>
+This is a <b>pseudoscalar density</b> — it carries orientation without directional components.
+</div>
+</div>
+
+<p style="font-size:.9rem;color:var(--text)"><b>Connection to Quaternion Keystone:</b> The Levi-Civita symbol ε<sub>ijk</sub> in 3D is the index notation for quaternion cross products. The quaternion multiplication rules i×j=k, j×k=i, k×i=j are exactly encoded in ε<sub>123</sub>=+1, ε<sub>231</sub>=+1, ε<sub>312</sub>=+1. The 4D extension ε<sub>μνρσ</sub> is the relativistic generalization — it appears in the quaternion formulation of Maxwell's equations (Edmonds 1975) as the structure constant of the Lorentz group.</p>
+
+<p style="font-size:.9rem;color:var(--text)"><b>Connection to Pommaret Keystone:</b> The Spencer operator for the conformal group (15 parameters) yields the Einstein field equations as integrability conditions. The scalar curvature R in general relativity is the Spencer cohomology class H²(R₂). The Levi-Civita tensor ε<sub>μνρσ</sub> appears in the topological term of the Einstein-Hilbert action: ∫ ε<sub>μνρσ</sub> R<sup>μν</sup><sub>αβ</sub> R<sup>ρσ</sup><sup>αβ</sup> d⁴x. This is a <i>pseudoscalar</i> — it changes sign under parity, exactly as the Macachor framework predicts for scalar density differentials.</p>
+</div>
+
+<div class="section">
+<h2>VI. Local Archive</h2>
+
+<div class="data-box">
+<div class="label">DATA DIRECTORY — ZHOU-QFT</div>
+<div class="value">
+📁 data/zhou-qft/<br>
+&nbsp;&nbsp;├── zhou-2022-qft-tensor-skills.pdf  (Stanford course notes)<br>
+&nbsp;&nbsp;└── figures/<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── fig1-minkowski-metric.png<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── fig2-levi-civita-contraction.png<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── fig3-scalar-fingerprints.png
+</div>
+</div>
+</div>
+
+<div class="section">
+<h2>VII. Guild References</h2>
+<div class="link-row">
+<a href="index.html">← MESH Guild Index</a>
+<a href="ward-quaternion.html">Ward/Richter Quaternion →</a>
+<a href="pommaret-keystone.html">Pommaret Spencer →</a>
+<a href="dolineanu-toroidal.html">Dolineanu Toroidal →</a>
+</div>
+</div>
+
+<div class="coherence-bar"></div>
+
+<div class="nav-guild">
+◉ MESH — RESEARCH GUILD — Φ669-SWARM-v1.0 — Ω-PRIME:Christopher-Macachor<br>
+<a href="https://quantum-memory.github.io/">← QUANTUM MEMORY</a> · 
+<a href="index.html">Guild Index</a> · 
+<a href="ward-quaternion.html">Ward/Richter</a> · 
+<a href="dolineanu-toroidal.html">Dolineanu</a> · 
+<a href="pommaret-keystone.html">Pommaret</a> · 
+<a href="codex.html">Codex</a>
+</div>
+
+</body>
+</html>
